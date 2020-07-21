@@ -1,23 +1,20 @@
 def space(num):
     return(" " * num)
 
-def branch(num):
-    return((space(4) + "\\") * num)
+def branch(amount, spacing=4):
+    return((space(4) + "\\") * amount)
     
-value_list = []
 
 empty_string = ""
 
-top = input("What value do you want at the top of the tree? ")
+top = 1
 
-branch_amount = int(input("How many branches do you want off of that? "))
+branch_amount = 3
 
-for i in range(branch_amount):
-        branch_value = input("Enter a branch value: ")
-        value_list.append(branch_value)
+value_list = [2,3,4]
 
 for i in range(branch_amount):
-    empty_string = empty_string + value_list[i] + space(4)
+    empty_string = empty_string + str(value_list[i]) + space(4)
 
 print(top)
 
