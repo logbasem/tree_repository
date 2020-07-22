@@ -4,6 +4,6 @@ def space(num):
 
 print(1)
 print("|" + space(4) + "\\")
-print("2" + space(5) + "3")
-print("|" + space(2) + "\\" + space(2) + "|" + space(2) + "\\")
-print("4" + space(3) + "5" + space(1) + "6" + space(3) + "7")
+print("2" + space(4) + "3")
+print("|" + space(2) + "\\" + space(1) + "|" + space(2) + "\\")
+print("4" + space(2) + "5" + space(1) + "6" + space(2) + "7")
