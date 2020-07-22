@@ -2,7 +2,7 @@ def space(num):
     return(" " * num)
 
 def branch(amount, spacing=4):
-    return((space(4) + "\\") * amount)
+    return("|" + ((space(spacing) + "\\") * (amount-1)))
     
 
 empty_string = ""
@@ -21,6 +21,6 @@ print(top)
 if branch_amount == 1:
     print("|")
 elif branch_amount > 1:
-    print("|" + branch(branch_amount - 1))
+    print(branch(branch_amount))
 
 print(empty_string)
