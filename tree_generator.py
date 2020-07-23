@@ -8,7 +8,7 @@ def add_branches(branch_amount, spacing=4):
     if branch_amount == 1:
         print("|")
     elif branch_amount > 1:
-        print(branch(branch_amount))
+        print(branch(branch_amount,spacing))
 
 def add_values(value_list, spacing=4):
     placeholder_string = ""
@@ -18,8 +18,14 @@ def add_values(value_list, spacing=4):
 
 top = 1
 
+spacing = 5
+
 print(top)
 
-add_branches(3)
+add_branches(3,spacing)
 
-add_values([2,3,4])
+add_values([2,3,4],spacing)
+
+add_branches(2,spacing-2)
+
+add_values([5,6],spacing-2)
