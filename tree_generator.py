@@ -22,14 +22,17 @@ top = 1
 
 spacing = 4
 
-print(top)
+tiers = []
 
-print(add_branches(2,spacing))
+tiers.append(top)
 
-print(add_values([2,3],spacing))
+tiers.append(add_branches(2,spacing))
 
-print(add_branches(1,spacing-2) + space(spacing) + add_branches(2,spacing-2,))
+tiers.append(add_values([2,3],spacing))
 
-print(add_values([4],spacing-2) + space(spacing) + add_values([5,6],spacing-2))
+tiers.append(add_branches(1,spacing-2) + space(spacing) + add_branches(2,spacing-2,))
 
-#tiering system??? add_value and add_branches grouping into tiers using variables that store the data that is returned by the functions??
+tiers.append(add_values([4],spacing-2) + space(spacing) + add_values([5,6],spacing-2))
+
+for tier in tiers:
+    print(tier)
