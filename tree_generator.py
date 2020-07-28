@@ -20,7 +20,9 @@ def add_values(value_list, spacing=4):
 
 top = 1
 
-spacing = 6
+tier_amount = 3
+
+spacing = tier_amount*2
 
 tiers = []
 
