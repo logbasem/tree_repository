@@ -20,19 +20,18 @@ def add_values(value_list, spacing=4):
 
 top = 1
 
-spacing = 4
+spacing = 6
 
 tiers = []
 
 tiers.append(top)
 
-tiers.append(add_branches(2,spacing))
+tiers.append(add_branches(3,spacing))
 
-tiers.append(add_values([2,3],spacing))
+tiers.append(add_values([2,3,4],spacing))
 
-tiers.append(add_branches(1,spacing-2) + space(spacing) + add_branches(2,spacing-2,))
-
-tiers.append(add_values([4],spacing-2) + space(spacing) + add_values([5,6],spacing-2))
+tiers.append(add_branches(1,int(spacing/2)) + space(spacing) + add_branches(2,int(spacing/2)))
+tiers.append(add_values([5],int(spacing/2)) + space(spacing) + add_values([6,7],int(spacing/2)))
 
 for tier in tiers:
     print(tier)
