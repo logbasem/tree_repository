@@ -8,6 +8,4 @@ class Node:
 
 root = Node(1)
 
-root.children = Node([Node(2),Node(3)])
-
-root.children.children = Node(4)
+root.children = Node(Node([Node([2,3]),Node([4,5])]))
