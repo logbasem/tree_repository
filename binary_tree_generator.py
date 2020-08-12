@@ -17,7 +17,7 @@ def create_tree(tier_number,top,value_list):
     binary_tree.show()
 
 tier_number = 2
-top = 150
-value_list = [15,10]
+top = 330
+value_list = [33,10]
 
 create_tree(tier_number,top,value_list)
