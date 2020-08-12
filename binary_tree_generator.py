@@ -8,16 +8,22 @@ def add_two_branches(tree,parent,first_value,second_value):
     tree.create_node(str(first_value),first_value,parent=parent)
     tree.create_node(str(second_value),second_value,parent=parent)
 
-def create_tree(tier_number,top,value_list):
+def create_tree(value_list):
     binary_tree = Tree()
-    binary_tree.create_node(str(top),top)
+    binary_tree.create_node(str(value_list[0]),value_list[0])
 
-    add_two_branches(binary_tree,top,value_list[0],value_list[1])
+    a = 1
+    b = 2
+
+    for i in range(1):
+        
+        add_two_branches(binary_tree,value_list[i],value_list[i+a],value_list[i+b])
+        
+        a += 1
+        b = a+1
 
     binary_tree.show()
 
-tier_number = 2
-top = 330
-value_list = [33,10]
+value_list = [330,33,10]
 
-create_tree(tier_number,top,value_list)
+create_tree(value_list)
