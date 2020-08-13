@@ -15,7 +15,7 @@ def create_tree(value_list):
     a = 1
     b = 2
 
-    for i in range(1):
+    for i in range((len(value_list)-1)/2):
         
         add_two_branches(binary_tree,value_list[i],value_list[i+a],value_list[i+b])
         
@@ -24,6 +24,6 @@ def create_tree(value_list):
 
     binary_tree.show()
 
-value_list = [330,33,10]
+value_list = [330,33,10,11,3,5,2]
 
 create_tree(value_list)
