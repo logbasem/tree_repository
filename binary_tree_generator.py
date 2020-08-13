@@ -2,6 +2,7 @@ import treelib
 
 from treelib import Node, Tree
 
+import random
 
 def add_two_branches(tree,parent,first_value,second_value,id_value):
     tree.create_node(str(first_value),id_value,parent=parent)
@@ -25,6 +26,12 @@ def create_tree(value_list):
 
     binary_tree.show()
 
-value_list = [4,2,2]
+def list_of_numbers(min, max):
+    number_list = []
+    for i in range(random.randint(3,33)):
+        number_list.append(random.randint(min,max))
+    return number_list
+
+value_list = list_of_numbers(1,100)
 
 create_tree(value_list)
