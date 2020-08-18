@@ -33,7 +33,8 @@ def list_of_numbers(min, max):
     return number_list
 
 value_list = list_of_numbers(1,100)
-
 my_tree = create_tree(value_list)
-
 my_tree.show()
+
+for i in range(len(value_list)-1):
+    print(my_tree[i].tag)
