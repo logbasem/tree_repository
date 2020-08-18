@@ -24,7 +24,7 @@ def create_tree(value_list):
         a += 1
         b = a+1
 
-    binary_tree.show()
+    return(binary_tree)
 
 def list_of_numbers(min, max):
     number_list = []
@@ -34,4 +34,6 @@ def list_of_numbers(min, max):
 
 value_list = list_of_numbers(1,100)
 
-create_tree(value_list)
+my_tree = create_tree(value_list)
+
+my_tree.show()
